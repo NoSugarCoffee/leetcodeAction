@@ -14,17 +14,17 @@ func Test_mergeTwoLists(t *testing.T) {
 	l1:=&ListNode{Val: 1, Next:l2}
 	list := mergeTwoLists(f1,l1)
 
-	for ;list!=nil;list= Next {
+	for ;list!=nil;list= list.Next {
 		t.Log(list)
 	}
 
 	list = mergeTwoLists(nil,nil)
-	for ;list!=nil;list= Next {
-		t.Log(Val)
+	for ;list!=nil;list= list.Next {
+		t.Log(list.Val)
 	}
 
 	list = mergeTwoLists(f1,nil)
-	for ;list!=nil;list= Next {
-		t.Log(Val)
+	for ;list!=nil;list= list.Next {
+		t.Log(list.Val)
 	}
 }
